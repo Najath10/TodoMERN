@@ -27,7 +27,7 @@ const Todo = () => {
        fetchTodo();
      },[])
 
-     const addTodo =async()=>{
+     const addTodo = async()=>{
        if (!newTodo.trim()) return alert("emptyy")
        try {
          const response = await axios.post(API_URL,{
