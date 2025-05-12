@@ -4,7 +4,7 @@ import "../App.css";
 import axios from "axios";
 
 
-const API_URL = "http://localhost:3005/api/todo";
+const API_URL = import.meta.env.VITE_API_URL
 const Todo = () => {
  
     const [todoList,setTodoList] = useState([]);
